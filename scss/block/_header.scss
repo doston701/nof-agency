@@ -1,0 +1,155 @@
+.site-header {
+  padding: 28px 0;
+}
+
+.header-wrapper {
+  max-width: 1320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: 164px;
+  height: 35px;
+  display: inline-block;
+}
+
+.header-part-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-list__item + .header-list__item {
+  margin-left: 40px;
+}
+
+.header-list__link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: rgba(25, 28, 47, 0.6);
+}
+
+.header-tel-wrap {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.header-tel-wrap__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: rgba(25, 28, 47, 0.7);
+}
+
+.header-tel-wrap-bold {
+  color: #191c2f;
+}
+
+.header-tel-wrap__button {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-left: 46px;
+  cursor: pointer;
+}
+
+.header-tel-wrap__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #191c2f;
+  margin-left: 8px;
+}
+
+.header-line {
+  margin-top: 16px;
+}
+
+.header-btn {
+  width: 27px;
+  height: 24px;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  background-image: url("../../img/menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .site-header {
+    margin: 0 auto;
+  }
+
+  .header-wrapper {
+    max-width: 794px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-part-left {
+    position: relative;
+    width: 100vh;
+    max-width: 357px;
+    display: flex;
+    align-items: center;
+  }
+
+  .header-list {
+    display: none;
+  }
+
+  .header-tel-wrap {
+    margin-left: 0px;
+  }
+
+  .header-btn {
+    position: absolute;
+    display: flex;
+    top: 7px;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 561px) {
+  .site-header {
+    padding-top: 35px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+
+  .header-list {
+    display: none;
+  }
+
+  .header-tel-wrap {
+    display: none;
+  }
+
+  .header-btn {
+    position: absolute;
+    display: flex;
+    top: -31px;
+    right: 23px;
+  }
+
+  .header-wrapper {
+    justify-content: unset;
+    display: unset;
+    align-items: unset;
+    max-width: 374px;
+  }
+}
